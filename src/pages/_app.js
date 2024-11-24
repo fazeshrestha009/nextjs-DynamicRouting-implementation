@@ -1,5 +1,12 @@
-import "@/styles/globals.css";
+import { MantineProvider } from '@mantine/core';
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Component {...pageProps} />
+    </MantineProvider>
+  );
 }
+
+export default MyApp;
