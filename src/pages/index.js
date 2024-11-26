@@ -1,25 +1,32 @@
+import React from 'react';
 import Layout from './component/Layout';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <Layout title="Home Page" footerText="© 2024 Home Page">
+    <Layout>
       <div className="p-6">
-        <h1 className="text-2xl font-bold mb-4">Welcome to the Dynamic Routing Page!</h1>
+        <h1 className="text-2xl font-bold mb-4">Welcome to the Home!</h1>
         <ul className="mt-4">
           <li>
-            <Link href="/1">
-              <span className="text-blue-500 hover:underline cursor-pointer">Go to Page 1</span>
+            <Link href="product/1" className="text-blue-500 hover:underline cursor-pointer">
+              Go to Product 1
             </Link>
           </li>
           <li>
-            <Link href="/2">
-              <span className="text-blue-500 hover:underline cursor-pointer">Go to Page 2</span>
+            <Link href="product/2" className="text-blue-500 hover:underline cursor-pointer">
+              Go to Product 2
             </Link>
           </li>
           <li>
-            <Link href="/3">
-              <span className="text-blue-500 hover:underline cursor-pointer">Go to Page 3</span>
+            <Link href="product/3" className="text-blue-500 hover:underline cursor-pointer">
+              Go to Product 3
+            </Link>
+
+          </li>
+          <li>
+            <Link href="product/4" className="text-blue-500 hover:underline cursor-pointer">
+              Go to Product 4
             </Link>
           </li>
         </ul>
